@@ -2,16 +2,16 @@ import logging
 import os
 import re
 import requests
-from aiogram import Bot, Dispatcher, types
-from aiogram.utils import executor
+from aiogram import Bot, Dispatcher
+from aiogram.types import Message
+from aiogram.filters.command import Command 
+
 
 GIPHY_API_KEY = 'N8MJuWNWONQ1mqhSpAEsyu2tkC8Jz2qC'
 
 TOKEN = os.getenv("TOKEN")
-if TOKEN is None:
-    raise ValueError("Не удалось найти токен бота. Убедитесь, что переменная окружения TOKEN задана.")
 
-TOKEN = os.getenv("TOKEN")
+# TOKEN="6974873059:AAGHCq0oo2WEd0TOqR2yOHEd_M0WBZvVLtk"
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
@@ -25,7 +25,7 @@ def get_funny_gif():
     gif_url = data['data']['images']['original']['url']
     return gif_url
 
-async def send_funny_gif(message: types.Message):
+async def send_funny_gif(message: Message):
     gif_url = get_funny_gif()
     await message.answer_animation(animation=gif_url)
 
@@ -47,8 +47,8 @@ translit_dict = {
 def transliterate(text):
     return ''.join([translit_dict.get(char, char) for char in text])
 
-@dp.message_handler(commands=['start'])
-async def process_command_start(message: types.Message):
+@dp.message(Command(commands=['start']))
+async def process_command_start(message: Message):
     user_name = message.from_user.full_name
     user_id = message.from_user.id
     if contains_cyrillic(user_name):
@@ -59,12 +59,12 @@ async def process_command_start(message: types.Message):
     logging.info(f'{user_name}, {user_id} запустил самый лучший бот на свете')
     await bot.send_message(chat_id=user_id, text=text)
 
-@dp.message_handler(commands=['funnygif'])
-async def command_funny_gif(message: types.Message):
+@dp.message(Command(commands=['funnygif']))
+async def command_funny_gif(message: Message):
     await send_funny_gif(message)
 
-@dp.message_handler()
-async def echo_message(message: types.Message):
+@dp.message()
+async def echo_message(message: Message):
     user_name = message.from_user.full_name
     user_id = message.from_user.id
     text = message.text
@@ -72,4 +72,4 @@ async def echo_message(message: types.Message):
     await message.answer(text=text)
 
 if __name__ == '__main__':
-    executor.start_polling(dp, skip_updates=True)
+    dp.run_polling(bot)

@@ -1,0 +1,36 @@
+17:31:22, 37 aiogram.dispatcher INFO Start polling
+17:31:22, 287 aiogram.dispatcher INFO Run polling for bot @derinasevas_reminder_bot id=6974873059 - 'Friendly reminder'
+17:31:22, 803 root INFO darina seva, 749039129, привет
+17:31:22, 803 root INFO darina seva, 749039129, йэ
+17:31:23, 161 aiogram.event INFO Update id=317245885 is handled. Duration 358 ms by bot id=6974873059
+17:31:23, 162 aiogram.event INFO Update id=317245886 is handled. Duration 358 ms by bot id=6974873059
+17:31:23, 163 aiogram.event INFO Update id=317245884 is handled. Duration 796 ms by bot id=6974873059
+17:31:29, 837 root INFO darina seva, 749039129, привет
+17:31:29, 982 aiogram.event INFO Update id=317245887 is handled. Duration 144 ms by bot id=6974873059
+17:31:34, 882 aiogram.event INFO Update id=317245888 is handled. Duration 528 ms by bot id=6974873059
+17:31:50, 716 root INFO Александра Боченкова, 1357735193 запустил самый лучший бот на свете
+17:31:50, 999 aiogram.event INFO Update id=317245889 is handled. Duration 283 ms by bot id=6974873059
+17:32:12, 937 root INFO Александра Боченкова, 1357735193, Приветики!
+17:32:13, 276 aiogram.event INFO Update id=317245890 is handled. Duration 338 ms by bot id=6974873059
+17:32:21, 845 root INFO Александра Боченкова, 1357735193, Смешная гифка
+17:32:21, 932 aiogram.event INFO Update id=317245891 is handled. Duration 87 ms by bot id=6974873059
+17:32:36, 255 aiogram.event INFO Update id=317245892 is handled. Duration 1507 ms by bot id=6974873059
+17:32:38, 978 aiogram.event INFO Update id=317245893 is handled. Duration 520 ms by bot id=6974873059
+17:32:40, 524 aiogram.event INFO Update id=317245894 is handled. Duration 489 ms by bot id=6974873059
+17:32:42, 48 aiogram.event INFO Update id=317245895 is handled. Duration 560 ms by bot id=6974873059
+17:32:43, 791 aiogram.event INFO Update id=317245896 is handled. Duration 835 ms by bot id=6974873059
+17:32:44, 83 aiogram.event INFO Update id=317245897 is handled. Duration 684 ms by bot id=6974873059
+17:32:45, 112 aiogram.event INFO Update id=317245898 is handled. Duration 616 ms by bot id=6974873059
+17:32:46, 374 aiogram.event INFO Update id=317245899 is handled. Duration 515 ms by bot id=6974873059
+17:32:46, 969 aiogram.event INFO Update id=317245900 is handled. Duration 461 ms by bot id=6974873059
+17:34:11, 225 aiogram.event INFO Update id=317245901 is handled. Duration 744 ms by bot id=6974873059
+17:34:50, 846 aiogram.event INFO Update id=317245902 is handled. Duration 977 ms by bot id=6974873059
+17:34:53, 522 aiogram.event INFO Update id=317245903 is handled. Duration 471 ms by bot id=6974873059
+17:37:03, 685 aiogram.event INFO Update id=317245904 is handled. Duration 622 ms by bot id=6974873059
+17:37:04, 270 aiogram.event INFO Update id=317245905 is handled. Duration 514 ms by bot id=6974873059
+17:37:08, 296 aiogram.event INFO Update id=317245906 is handled. Duration 526 ms by bot id=6974873059
+17:37:12, 676 aiogram.event INFO Update id=317245907 is handled. Duration 603 ms by bot id=6974873059
+17:37:48, 70 aiogram.event INFO Update id=317245908 is handled. Duration 649 ms by bot id=6974873059
+17:37:59, 398 aiogram.event INFO Update id=317245909 is handled. Duration 472 ms by bot id=6974873059
+17:38:03, 141 aiogram.event INFO Update id=317245910 is handled. Duration 522 ms by bot id=6974873059
+17:38:08, 240 aiogram.event INFO Update id=317245911 is handled. Duration 535 ms by bot id=6974873059
