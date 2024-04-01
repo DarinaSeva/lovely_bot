@@ -11,7 +11,6 @@ GIPHY_API_KEY = 'N8MJuWNWONQ1mqhSpAEsyu2tkC8Jz2qC'
 
 TOKEN = os.getenv("TOKEN")
 
-# TOKEN="6974873059:AAGHCq0oo2WEd0TOqR2yOHEd_M0WBZvVLtk"
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
